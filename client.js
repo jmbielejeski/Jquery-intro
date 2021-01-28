@@ -35,8 +35,13 @@ function onReady() {
 }
 
 function deleteMe() {
-  console.log('Delete me');
-  $('.harmonicaItem').remove();
+  let thisThing = $(this);
+  console.log(thisThing);
+
+  //this targets one element .parent targets that elements parent
+  $(this).parent().remove();
+  // console.log('Delete me');
+  // $('.harmonicaItem').remove();
 }
 
 //click event
