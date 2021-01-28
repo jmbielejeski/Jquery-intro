@@ -41,11 +41,14 @@ function deleteMe() {
   //this targets one element .parent targets that elements parent
   $(this).parent().remove();
   // console.log('Delete me');
-  // $('.harmonicaItem').remove();
+  // $('.harmonicaItem').remove(); this deleted the whole list
 }
 
 //click event
-function whenIAddAHarmonica() {
+//accept event as an argument
+function whenIAddAHarmonica(event) {
+  //stops form from auto refreshing the page
+  event.preventDefault();
   //Stuff todo when we add a harmonica
   console.log('clicked the button');
 
