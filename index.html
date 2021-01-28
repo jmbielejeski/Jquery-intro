@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="jquery.js"></script>
-    <link rel="stylesheet" href="style.css" />
     <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
     <title>Jquery intro</title>
   </head>
@@ -18,5 +18,31 @@
       <li>Child 2</li>
       <li class="the-best">Child 3</li>
     </ul>
+
+    <!--
+      FORMS!
+    -->
+    <label for="brand">Harmonica Brand</label>
+    <!--for=brand links to id brand-->
+    <input type="text" id="brand" placeholder="Harmonica Brand" />
+
+    <select>
+      <option>Special 20</option>
+      <option>ROCKET</option>
+      <option>Marine</option>
+    </select>
+
+    <input type="radio" name="mode" />
+    <label for="male">Major</label>
+    <input type="radio" name="mode" />
+    <label for="female">Minor</label>
+
+    <input type="checkbox" name="mode" />
+    <label for="male">Black</label>
+    <input type="checkbox" name="mode" />
+    <label for="male">Gold</label>
+
+    <!--different ways of submitting-->
+    <input id="submitBtn" type="submit" value="Submit!" />
   </body>
 </html>

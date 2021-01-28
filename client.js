@@ -16,11 +16,21 @@ function onReady() {
   //toggleClass
 
   //changing the text
-  const h1Text = $('h1').text('hello cullen');
-  console.log('h1Text is ' + h1Text);
+  const h1Text = $('h1').text();
+  console.log('h1Text is ', h1Text);
 
-  const louderText = h1Text.toUpperCase() + '!!!!!';
+  let louderText = h1Text.toUpperCase() + '!!!!!';
   $('h1').text(louderText);
+
+  //grab button then write on click calls this functions
+  $('#submitBtn').on('click', whenIAddAHarmonica);
 }
+
+//click event
+function whenIAddAHarmonica() {
+  //Stuff todo when we add a harmonica
+  console.log('clicked the button');
+}
+
 //DOM - document object model - your HTML
 //Jquery is all about DOM manipulation
