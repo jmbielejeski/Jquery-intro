@@ -24,12 +24,17 @@ function onReady() {
 
   //grab button then write on click calls this functions
   $('#submitBtn').on('click', whenIAddAHarmonica);
+  //can pass in one function on click event
 }
 
 //click event
 function whenIAddAHarmonica() {
   //Stuff todo when we add a harmonica
   console.log('clicked the button');
+
+  //grab data from input field
+  let brand = $('#brand').val();
+  console.log(brand);
 }
 
 //DOM - document object model - your HTML
